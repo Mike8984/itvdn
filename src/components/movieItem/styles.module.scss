@@ -1,0 +1,34 @@
+@use '../../styles/shared';
+
+.movieItem {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  box-shadow: 0 0 5px 1px;
+  display: block;
+  margin-bottom: 16px;
+  .movieItemContent {
+    padding: 10px;
+  }
+
+  .movieItemContent {
+    .movieItemTitle {
+      margin-bottom: 24px;
+      font-size: shared.$heading-font-size;
+    }
+
+    .movieItemDescription {
+      margin-bottom: 12px;
+      color: shared.$dimmed-color;
+    }
+
+    .popularity {
+      font-weight: bold;
+    }
+  }
+
+  .poster {
+    border-radius: 6px 6px 0 0;
+    object-fit: contain;
+    width: 400px;
+  }
+}
